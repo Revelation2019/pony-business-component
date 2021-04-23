@@ -1,19 +1,16 @@
-import React, { useState, useEffect, useCallback } from 'react';
-
+import React, { useCallback, useEffect, useState } from 'react';
 import { getTodoList } from './api';
 
-interface ITodoListProps {
-  /** 获取任务清单id */
+interface TodoListProps {
   id: string;
 }
 
-const TodoList = (props: ITodoListProps) => {
-
-  const { id } = props;
+const TodoList = (props: TodoListProps) => {
 
   const [source, setSource] = useState<string[]>([]);
 
-  const getSource = useCallback(async () => {
+  const init = useCallback(async () => {
+    const { id } = props;
     if (id) {
       const { code , data} = await getTodoList(id);
       if (code === 200 && !!data) {
@@ -23,8 +20,8 @@ const TodoList = (props: ITodoListProps) => {
   }, [])
 
   useEffect(() => {
-    getSource();
-  }, [getSource]);
+    init();
+  }, []);
 
   return (
     <ul>
@@ -34,6 +31,5 @@ const TodoList = (props: ITodoListProps) => {
     </ul>
   )
 }
-
 
 export { TodoList };

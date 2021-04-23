@@ -4,7 +4,7 @@ menu: Components
 ---
 
 import { Playground, Props } from "docz";
-import { TodoList } from "../packages/business-todo-list/src/index.ts";
+import { TodoList } from "../packages/business-todo-list/src/TodoList.tsx";
 import '../packages/business-todo-list/styles/index.scss';
 
 
@@ -21,12 +21,10 @@ import '@pony/business-todo-list/styles/index.scss';
 
 ## 属性
 
-<Props of={TodoList} isToggle />
+<Props of={TodoList} />
 
 ## 基础用法
 
 <Playground>
-  {() => {
-    return <TodoList id="123456"></TodoList>;
-  }}
+  <TodoList id="123456"></TodoList>
 </Playground>

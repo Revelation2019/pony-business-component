@@ -1,0 +1,32 @@
+---
+name: business-download-excel
+menu: Components
+---
+
+import { Playground, Props } from "docz";
+import { DownloadExcel } from "../packages/business-download-excel/src/index.ts";
+import '../packages/business-download-excel/styles/index.scss';
+
+
+## 安装
+``` bash
+yarn add @pony/business-download-excel
+```
+
+## 引用
+``` typescript
+import { DownloadExcel } from '@pony/business-download-excel';
+import '@pony/business-download-excel/styles/index.scss';
+```
+
+## 属性
+
+<Props of={DownloadExcel} isToggle />
+
+## 基础用法
+
+<Playground>
+  {() => {
+    return <DownloadExcel id="123456"></DownloadExcel>;
+  }}
+</Playground>

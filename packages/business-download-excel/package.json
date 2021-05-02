@@ -1,5 +1,5 @@
 {
-  "name": "@business/download-excel",
+  "name": "pony-bre-download-excel",
   "version": "1.0.0",
   "description": "下载excel",
   "main": "lib/index.js",
@@ -24,5 +24,5 @@
     "styles/*",
     "package.json"
   ],
-  "gitHead": "6bd315287760a387b54699371211158c8e041a62"
+  "gitHead": "f8b3e2eff673060059e9628c5a2ff166bb804441"
 }

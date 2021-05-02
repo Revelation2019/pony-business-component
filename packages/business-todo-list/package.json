@@ -1,5 +1,5 @@
 {
-  "name": "@pony/business-todo-list",
+  "name": "pony-bre-todo-list",
   "version": "1.0.0",
   "description": "任务清单业务组件",
   "main": "lib/index.js",
@@ -24,5 +24,5 @@
     "react": "16.8.6",
     "react-dom": "16.8.6"
   },
-  "gitHead": "6bd315287760a387b54699371211158c8e041a62"
+  "gitHead": "f8b3e2eff673060059e9628c5a2ff166bb804441"
 }

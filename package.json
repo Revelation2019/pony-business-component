@@ -14,6 +14,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
     "url": "https://github.com/Revelation2019/pony-business-component/issues",
     "email": "zhousheng_zuel@163.com"

@@ -1,11 +1,14 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { SFC, useCallback, useEffect, useState } from 'react';
+// import { Playground, Props, useComponentProps } from "docz";
 import { getTodoList } from './api';
 
 interface TodoListProps {
   id: string;
 }
 
-const TodoList = (props: TodoListProps) => {
+
+const TodoList: SFC<TodoListProps> = (props: TodoListProps) => {
+  // console.log(useComponentProps({componentName: 'TodoList', fileName: '/packages/business-todo-list/src/TodoList.tsx'}))
 
   const [source, setSource] = useState<string[]>([]);
 
@@ -26,7 +29,7 @@ const TodoList = (props: TodoListProps) => {
   return (
     <ul>
       {
-        source.map((s: string) => <li>{s}</li>)
+        source.map((s: string, index: number) => <li key={index}>{s}</li>)
       }
     </ul>
   )

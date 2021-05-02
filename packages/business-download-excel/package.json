@@ -23,5 +23,6 @@
     "src/*",
     "styles/*",
     "package.json"
-  ]
+  ],
+  "gitHead": "38e4067abaecaceedcee0cce4254d6716f88ff4b"
 }

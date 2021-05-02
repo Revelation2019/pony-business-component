@@ -1,6 +1,6 @@
 {
   "name": "@business/download-excel",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "下载excel",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

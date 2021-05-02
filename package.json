@@ -1,7 +1,7 @@
 {
-  "name": "@pony/business-component",
+  "name": "@pony/bre-component-react",
   "private": true,
-  "version": "independent",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "clean": "lerna clean",
@@ -13,6 +13,17 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "publish": "lerna exec tsc && lerna publish"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "bugs": {
+    "url": "https://github.com/Revelation2019/pony-business-component/issues",
+    "email": "zhousheng_zuel@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Revelation2019/pony-business-component.git"
   },
   "devDependencies": {
     "@types/react": "^16.9.1",

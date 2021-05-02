@@ -17,3 +17,8 @@ See https://fb.me/react-invalid-hook-call for tips about how to debug and fix th
   //     "packages/*"
   //   ]
   // },
+
+#### 3、执行yarn build
+报错：`Yarn workspaces need to be defined in the root package.json.`
+
+原因是没有在package.json中指定workspaces，也就是yarn命令执行的空间

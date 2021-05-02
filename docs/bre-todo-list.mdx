@@ -1,0 +1,30 @@
+---
+name: bre-todo-list
+menu: Components
+---
+
+import { Playground, Props } from "docz";
+import { TodoList } from "../packages/bre-todo-list/src/index.ts";
+import '../packages/bre-todo-list/styles/index.scss';
+
+
+## 安装
+``` bash
+yarn add bre-todo-list
+```
+
+## 引用
+``` typescript
+import { TodoList } from 'bre-todo-list';
+import 'bre-todo-list/styles/index.scss';
+```
+
+## 属性
+
+<Props of={TodoList} isToggle/>
+
+## 基础用法
+
+<Playground>
+  <TodoList id="123456"></TodoList>
+</Playground>

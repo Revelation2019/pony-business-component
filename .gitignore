@@ -1,0 +1,9 @@
+node_modules
+build-docs
+packages/bre-*/node_modules
+packages/bre-*/lib
+.docz
+yarn-error.log
+yarn.lock
+package-lock.json
+lerna-debug.log
